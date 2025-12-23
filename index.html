@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ Aplicador de Overlay Moderno</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- <aside class="sidebar">
+        <div class="logo">O.A.</div>
+        <nav>
+            <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-cog"></i> Configurações</a>
+            <a href="#"><i class="fas fa-graduation-cap"></i> Tutorial</a>
+        </nav>
+    </aside> -->
+
+    <main class="main-content">
+        <h1>Aplicador de Overlay</h1>
+        <p class="subtitle">Personalize suas imagens com nosso overlay exclusivo.</p>
+
+        <div class="options-container">
+            <h2><i class="fas fa-palette"></i> Escolha o Overlay</h2>
+            <div class="radio-group">
+                <input type="radio" id="overlayEvento" name="overlayType" value="evento" checked>
+                <label for="overlayEvento">Evento</label>
+                
+                <input type="radio" id="overlayHallFama" name="overlayType" value="hallfama">
+                <label for="overlayHallFama">Hall da Fama</label>
+
+                <input type="radio" id="overlayEventovip" name="overlayType" value="eventovip">
+                <label for="overlayEventovip">Evento Vip</label>
+            </div>
+        </div>
+        <div id="dropArea" class="drop-area">
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+            
+            <div id="uploadPlaceholder" class="upload-placeholder">
+                <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                <p>Arraste e solte sua imagem aqui</p>
+                <p class="small-text">ou cole com **Ctrl + V**</p>
+                <button onclick="document.getElementById('imageUpload').click()" class="btn btn-primary">
+                    <i class="fas fa-folder-open"></i> Selecionar Imagem
+                </button>
+            </div>
+
+            <div id="previewContainer" class="preview-container" style="display: none;">
+                <div id="imageContainer" class="image-container">
+                    <img id="uploadedImage" src="#" alt="Imagem Carregada">
+                    <div id="customOverlay" class="custom-overlay"></div>
+                </div>
+                <button id="downloadButton" class="btn btn-success"><i class="fas fa-download"></i> Baixar Imagem com Overlay</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
